@@ -18,7 +18,8 @@ body,
 .right-row,
 .right-row1,
 .operator-row,
-.operator-button {
+.operator-button,
+#bottom-buttons {
     display: flex;
 }
 
@@ -55,6 +56,15 @@ main {
 #inner-display {
     background-color: white;
     min-height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Courier, monospace;
+    font-weight: normal;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 20px;
+    color: rgb(0, 189, 0);
+
 }
 
 .column1 {
@@ -109,10 +119,26 @@ button {
 
 .equals-button {
     background-color: #255e33;
-    flex: 1;
+    flex: 4;
     min-height: 200px;
-    min-width: 100%;
 }
 
+.ac {
+    flex: 1;
+    padding-left: 40px;
+    background-color: #d6c100;
+    border-left: solid #c5cbe3 10px;
+    border-right: solid #c5cbe3 10px; 
+    border-top: solid #c5cbe3 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* .clicked {
+    min-width: 180px;
+    min-height: 180px;
+    border: 10px solid skyblue;
+} */
 
 
