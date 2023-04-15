@@ -15,6 +15,7 @@ body {
     min-height: 100vh; 
 }
 
+body,
 #calculator,
 #middle-buttons,
 .column,
@@ -24,12 +25,21 @@ body {
     
 }
 
+body,
 #calculator,
 .column {
     flex-direction: column;
 }
 
 /* main content */
+
+main {
+    flex: 1;
+}
+
+#calculator {
+    margin: 100px;
+}
 
 .column1 {
     flex: 3;
@@ -39,6 +49,9 @@ body {
     flex: 1;
 }
 
+.number-button {
+    flex: 1;
+}
 
 /* 
 
