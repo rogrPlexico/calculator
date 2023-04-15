@@ -8,11 +8,12 @@
 
 body { 
     margin: 0;
+    min-height: 99.5vh; 
+    /* background-color: skyblue; */
 }
 
 
 body { 
-    min-height: 100vh; 
 }
 
 body,
@@ -20,25 +21,35 @@ body,
 #middle-buttons,
 .column,
 .row,
-.right-row {
+.right-row,
+.operation-row {
     display: flex;
-    
 }
 
 body,
 #calculator,
-.column {
+.column,
+.right-row {
     flex-direction: column;
 }
 
 /* main content */
 
+
 main {
     flex: 1;
 }
 
+.main-row {
+    padding: 10px;
+}
+
 #calculator {
     margin: 100px;
+}
+
+.column {
+    padding: 10px;
 }
 
 .column1 {
@@ -49,9 +60,12 @@ main {
     flex: 1;
 }
 
-.number-button {
+button {
     flex: 1;
+    min-height:160px;
+    min-width: 160px;
 }
+
 
 /* 
 
