@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;    
+    border: black 1px solid;
+    /* min-height: 10px;
+    min-width: 10px; */
+}
+
+
+body { 
+    margin: 0;
+}
+
+
+body { 
+    min-height: 100vh; 
+}
+
+#calculator,
+#middle-buttons {
+    display: flex;
+    
+}
+
+/* main content */
+
+#calculator {
+    flex-direction: column;
+}
+
+.column1 {
+    flex: 3;
+}
+
+.column2 {
+    flex: 1;
+}
+
+
+/* 
+
+.number-button,
+.operation-button {
+    width: 30px;
+    height: 30px;
+}
+ */
+
+
+
