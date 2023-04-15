@@ -16,16 +16,20 @@ body {
 }
 
 #calculator,
-#middle-buttons {
+#middle-buttons,
+.column,
+.row,
+.right-row {
     display: flex;
     
 }
 
-/* main content */
-
-#calculator {
+#calculator,
+.column {
     flex-direction: column;
 }
+
+/* main content */
 
 .column1 {
     flex: 3;
