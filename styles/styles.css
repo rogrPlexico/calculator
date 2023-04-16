@@ -135,10 +135,10 @@ button {
 
 }
 
-/* .clicked {
-    min-width: 180px;
-    min-height: 180px;
+.clicked {
+    transition: transform 0.5ms ease;
+    transform: scale(10);
     border: 10px solid skyblue;
-} */
+} 
 
 

@@ -72,6 +72,11 @@ function divide(x, y) {
     return +(x) / +(y);
 }
 
+function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    this.classList.remove('clicked');
+}
+
 const numberButtons = document.querySelectorAll('.number-button');
 numberButtons.forEach(element => element.addEventListener('click', storeOperands));
 
@@ -85,3 +90,12 @@ const innerDisplay = document.querySelector('#inner-display');
 
 const ac = document.querySelector('.ac');
 ac.addEventListener('click', clear);
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        this.classList.add('clicked');
+    })
+})
+buttons.forEach(button => button.addEventListener('transitionend', removeTransition));
+
