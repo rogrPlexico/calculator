@@ -136,8 +136,8 @@ button {
 }
 
 .clicked {
-    transition: transform 0.5ms ease;
-    transform: scale(10);
+    transition: transform 100ms ease;
+    transform: scale(1.1);
     border: 10px solid skyblue;
 } 
 
